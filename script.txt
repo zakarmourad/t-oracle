@@ -1,0 +1,38 @@
+//achraf karkaih mourad zakar 
+                      //Exercice 1
+//Q1
+
+select * from airplane where capacity > 350 ;
+
+// Q2
+
+select NumAP, NAmeAp 
+from airlane where localisation = 'Nice' ;
+
+// Q3 
+
+select NumAP ,Dep_t  from flight ;
+
+//Q4
+
+select * from pilot ; 
+
+
+// Q5
+
+select NameP from pilot  where address = 'Paris' and salary >15000 ;
+
+//Q6
+
+select NumAP, NAmeAp 
+from airlane where localisation = 'Nice' or capacity < 350;
+ //Q7
+select * from flight where dep_t ='Paris' and dep_h > 18 ;
+
+//Q8
+select NumP from pilot where NumP NOT IN (select Nump from flight ) ;
+
+//Q9
+select NumF , dep_t from flight where Nump in (100,204);
+
+                //EXERCICE2
